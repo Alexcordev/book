@@ -1,0 +1,75 @@
+﻿@*Projet réalisé par Alexandre Cormier - Matricule 748947*@
+@using System
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Gestion des livres</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/862dda45af.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="~/Content/Site.css">
+</head>
+<body>
+   
+<div class="container body-content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+       
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav mr-auto">
+             <li class="nav-link">
+               @Html.ActionLink("Accueil", "ListerPrets", "Prets")
+             </li>
+             <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle shadow off" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Membres
+               </a>
+               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <li class="dropdown-item">@Html.ActionLink("Membres", "listerTout", "Membres")</li>
+                 <li class="dropdown-item">@Html.ActionLink("Modifier", "Edit", "Membres")</li>
+                 <li class="dropdown-item">@Html.ActionLink("Supprimer", "Delete", "Membres")</li>
+               </ul>
+             </li>
+             <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle shadow off" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Prêts
+               </a>
+                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li class="dropdown-item">@Html.ActionLink("Modifier", "Edit", "Prets")</li>
+                      <li class="dropdown-item">@Html.ActionLink("Supprimer", "Delete", "Prets")</li>
+                   </ul>
+             </li>
+             <li class="nav-link mr-lg-5">
+               @Html.ActionLink("Retards", "Afficher", "Retards")
+             </li>
+             <form class="form-inline my-2 my-lg-0">
+                <i class="fas fa-plus-circle fa-2x"></i>
+                <li class="nav-link">
+                  @Html.ActionLink("Prêt", "Ajouter", "Prets")
+                </li>
+                <i class="fas fa-plus-circle fa-2x"></i>
+                <li class="nav-link">
+                  @Html.ActionLink("Membre", "Ajout", "Membres")
+                </li>
+             </form>
+           </ul>
+           
+         </div>
+       </nav>
+    @RenderBody()
+    
+    <hr>
+    
+    <footer>
+        <p>&copy; @DateTime.Now.Year- Gestion des livres</p>
+    </footer>
+</div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{C9F59E9E-2521-420C-9045-F9BCD6754A5C}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="book/App_Data/retards.txt">
+    <Files>
+      <File FileName="book/App_Data/livres.txt" Line="1" Column="1" />
+      <File FileName="book/App_Data/membres.txt" Line="1" Column="1" />
+      <File FileName="book/App_Data/prets.txt" Line="1" Column="1" />
+      <File FileName="book/App_Data/retards.txt" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="book" expanded="True">
+            <Node name="book" expanded="True">
+              <Node name="App_Data" expanded="True">
+                <Node name="retards.txt" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.book PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

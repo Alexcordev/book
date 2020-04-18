@@ -1,0 +1,65 @@
+@model book.Models.Membre
+
+@{
+    ViewBag.Title = "Ajout";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>Ajouter un membre</title>
+</head>
+<body>
+    
+    <h1 class="titrePrincipal">Ajouter un membre</h1>
+  
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card m-auto">
+            <div class="card-body">
+              <form action="Enregistrer" method="post" name="formEnreg">
+                
+                <div class="input-group input-group-lg mb-3">
+                  <div class="input-group-prepend input-size">
+                   <span class="input-group-text" id="addon1"><i class="fas fa-user fa-2x"></i></span>
+                  <input type="text" class="form-control" name="prenom" placeholder="Nom Complet" aria-label="Username" aria-describedby="addon1">
+                </div>
+                </div>
+                <div class="input-group input-group-lg mb-3">
+                  <div class="input-group-prepend input-size">
+                    <span class="input-group-text" id="addon2"><i class="fas fa-envelope fa-2x"></i></span>
+                    <input type="text" class="form-control " name="courriel" id="inputCourriel" placeholder="Courriel" aria-label="Email" aria-describedby="addon2">
+                  </div>
+                </div>
+                <div class="input-group input-group-lg mb-3">
+                  <div class="input-group-prepend input-size">
+                    <span class="input-group-text" id="addon3"><i class="fas fa-phone-square-alt fa-2x"></i></span>
+                    <input type="text" class="form-control " name="telephone" id="inputTelephone" placeholder="Téléphone" aria-label="Tel" aria-describedby="addon3">
+                  </div>
+                </div>
+                <div class="input-group input-group-lg mb-3">
+                  <div class="input-group-prepend input-size">
+                    <span class="input-group-text" id="addon4"><i class="fas fa-comment-dots fa-2x"></i></span>
+                     <input type="text" class="form-control " name="commentaire" id="inputCom" placeholder="Commentaire" aria-label="Comment" aria-describedby="addon4">
+                  </div>
+                </div>
+                
+                <button type="submit" class="btn btn-dark" onclick="formEnreg.submit();">Enregistrer</button>
+              </form>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+        @*Scripts.Render("~/Content/bootstrap.css") *@
+         @* Render the Bootstrap bundle here if you took it out of the main layout *@
+    @section Scripts {
+          <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+          
+    }
+</body>
+</html>

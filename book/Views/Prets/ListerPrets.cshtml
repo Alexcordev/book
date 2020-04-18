@@ -1,0 +1,41 @@
+@model System.Collections.Generic.IEnumerable<book.Models.Pret>
+
+@{
+    ViewBag.Title = "ListerPrets";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Liste des Prêts en cours</h2><br/>
+<table class="table table-hover table-light table-striped table-bordered">
+        <thead class="red">
+           <tr>
+              <th>Code</th>
+              <th>Nom</th>
+              <th>Courriel</th>
+              <th>Livre 1</th>
+              <th>Livre 2</th>
+              <th>Livre 3</th>
+              <th>Emprunt</th>
+              <th>Retour</th>
+           </tr>
+        </thead>
+        <tbody>
+         @foreach (var item in Model)
+          {
+          <tr>
+             <td>@item.Code</td>
+             <td>@item.Prenom</td>
+             <td>@item.Courriel</td>
+             <td>@item.Livre1</td>
+             <td>@item.Livre2</td>
+             <td>@item.Livre3</td>
+             <td>@item.DateEmprunt</td>
+             <td>@item.DateRetour</td>
+          </tr>
+          }
+        </tbody >
+</table >
+                
+   
+
+

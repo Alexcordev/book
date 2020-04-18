@@ -1,0 +1,26 @@
+@model book.Models.Membre
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+          
+          <h1 class="titrePrincipal">Supprimer un membre</h1>   
+          <div class="card">
+              <div class="card-body">
+                  <form action="Effacer" name="formSupp" method="post">
+                      <div class="input-group input-group-lg mb-3">
+                          <div class="input-group-prepend input-size">
+                              <span class="input-group-text" id="addon1"><i class="fas fa-envelope fa-2x"></i></span>
+                              <input type="text" class="form-control " name="courriel" id="inputCourriel" placeholder="Courriel du membre à supprimer" aria-label="Email" aria-describedby="addon1">
+                          </div>
+                      </div>
+                  
+                      <button class="btn btn-dark" onclick="formSupp.submit();"> Supprimer </button>
+      
+                  </form>
+              </div>
+          </div>
+      </div>

@@ -1,0 +1,4 @@
+1,Raymond Cloutier jr,raymondcloutier@gmail.com,L'art du confinement Roman,Ma première fois Jeunesse,Le petit Roi Enfant,29/03/2020,05/04/2020
+6,Rokia Choukairi,rchoukairi@gmail.com,Le petit Roi Enfant,Le petit Roi Enfant,Ma première fois Jeunesse,29/03/2020,05/04/2020
+5,Peter,peter@gmail.com,Le petit Roi Enfant,Aucun,Aucun,02/03/2020,09/03/2020
+555,Peter,peter@moncv.com,Le petit Roi Enfant,L'art du confinement Roman,Aucun,10/03/2020,17/03/2020
